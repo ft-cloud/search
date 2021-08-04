@@ -1,5 +1,5 @@
 const {app} = require('./searchServer');
-const session = require('./session');
+const session = require('sessionLib/session');
 const search = require('./search');
 module.exports.init = function initSessionPaths() {
 
