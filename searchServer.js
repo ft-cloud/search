@@ -26,7 +26,7 @@ global.connection.connect();
 
 app.use(cors());
 
-app.get("/api\\/v\\d\\/search",(req, res) => {
+app.get("/api/v1/search",(req, res) => {
     res.send(JSON.stringify({microService:"Search"}))
 })
 
