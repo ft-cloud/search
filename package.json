@@ -5,7 +5,8 @@
   "main": "searchServer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node searchServer.js"
+    "start": "node searchServer.js",
+    "debug": "nodemon  searchServer.js"
   },
   "author": "FT",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "mysql": "^2.18.1",
     "sessionlib": "github:ft-cloud/sessionLib",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
