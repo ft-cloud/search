@@ -6,8 +6,7 @@ WORKDIR /src
 
 ARG mode="prod"
 
-RUN if [ "${mode}" = "dev" ] ; then npm install && echo "install aka an mit liegts nicht" ; else npm install --production ; fi
-RUN echo "${mode}"
+RUN if [ "${mode}" = "dev" ] ; then npm install; else npm install --production ; fi
 
 EXPOSE 3000
 
