@@ -2,6 +2,8 @@ const express = require('express');
 const https = require("https");
 const fs = require("fs");
 const app = express();
+const cookieParser = require('cookie-parser')
+
 module.exports.app = app;
 
 const { MongoClient } = require("mongodb");
@@ -28,6 +30,7 @@ global.connection = mysql.createConnection({
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(cookieParser())
 
 
 
