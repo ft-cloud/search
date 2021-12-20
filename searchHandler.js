@@ -1,7 +1,10 @@
-const {app} = require('./searchServer');
-const session = require('sessionlib/session');
-const search = require('./search');
-module.exports.init = function initSessionPaths() {
+import {app} from "./searchServer";
+
+import {session} from "sessionlib/session.js";
+
+import search from "./search";
+
+export function initSessionPaths() {
 
     app.get('/api/v1/search/doSearch', (req, res) => {
 

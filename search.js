@@ -1,4 +1,4 @@
-var search = {
+export const search = {
 
     searchForDeviceNames: function (searchString, user) {
         return new Promise(function (resolve, reject) {
@@ -84,4 +84,3 @@ function generateValues(searchString,...columnnames) {
 }
 
 
-module.exports = search;
