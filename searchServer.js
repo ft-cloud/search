@@ -13,6 +13,7 @@ import cors from "cors";
 import {initSessionPaths} from "./searchHandler";
 
 import mysql from "mysql";
+import rateLimit from "express-rate-limit";
 
 const app = express();
 module.exports.app = app;
@@ -36,6 +37,8 @@ global.connection = mysql.createConnection({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
+app.disable('x-powered-by');
+
 
 
 
