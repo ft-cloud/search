@@ -13,7 +13,6 @@ import cors from "cors";
 import {initSessionPaths} from "./searchHandler";
 
 import mysql from "mysql";
-import rateLimit from "express-rate-limit";
 
 const app = express();
 module.exports.app = app;
